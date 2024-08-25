@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+## Assignment: Personal Budget Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Description
 
-## Available Scripts
+Develop a Personal Budget Tracker application using React and TypeScript. The app should allow users to track their income and expenses, categorize transactions, and visualize spending patterns. It should include features for adding, editing, and deleting transactions, as well as generating monthly and yearly summaries. Additionally, users should be able to view interactive charts to better understand their financial data.
 
-In the project directory, you can run:
+### Key Features
 
-### `npm start`
+1. **Transaction Management**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   - **Add Transaction**: Users can input details of a new transaction, including amount, category (expense or income), description, and date.
+   - **Edit Transaction**: Users can modify existing transactions.
+   - **Delete Transaction**: Users can remove transactions.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. **Expense and Income Categories**
 
-### `npm test`
+   - Provide predefined categories for transactions (e.g., Food, Transportation, Salary, etc.).
+   - Allow users to create custom categories.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Monthly and Yearly Summaries**
 
-### `npm run build`
+   - Generate and display summaries of expenses and income for the current month and year.
+   - Provide a breakdown of categories and amounts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Interactive Charts**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Use a chart library like Chart.js or Recharts to visualize spending patterns.
+   - Include charts such as pie charts for expense categories and bar charts for monthly spending.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Data Persistence**
+   - Use local storage to persist data across sessions or integrate with a backend service for data storage.
