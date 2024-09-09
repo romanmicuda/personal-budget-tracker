@@ -32,7 +32,7 @@ function PersonalBudgetTracker() {
         addTransaction={addTransaction}
       />
       <Category categories={categories} addCategory={addCategory} />
-      <Chart transactions={transactions} />
+      {transactions.length !== 0 && <Chart transactions={transactions} />}
       <DisplayTransactions
         transactions={transactions}
         deleteTransaction={deleteTransaction}
