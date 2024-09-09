@@ -28,8 +28,8 @@ const Chart: React.FC<{ transactions: TransactionType[] }> = ({
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
   return (
-    <div>
-      <h1>Plots</h1>
+    <div className="my-6">
+      <h1 className="text-2xl font-bold text-green-600 mb-4">Plots</h1>
       <PieChart width={400} height={400}>
         <Pie
           data={chartData}

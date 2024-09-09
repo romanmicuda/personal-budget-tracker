@@ -8,7 +8,10 @@ const SearchResult: React.FC<DisplayTransactionProps> = ({
   return (
     <div>
       {transactions.map((trans) => (
-        <div>
+        <div
+          key={trans.date.toISOString()}
+          className="mb-4 p-4 border rounded hover:bg-gray-100"
+        >
           <p>Amount: {trans.amount}</p>
           <p>Type: {trans.category.name}</p>
           <p>Date: {trans.date.toISOString().split("T")[0]}</p>

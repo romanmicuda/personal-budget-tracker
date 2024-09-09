@@ -48,11 +48,14 @@ export const DisplayTransactions: React.FC<DisplayTransactionProps> = ({
   );
 
   return (
-    <div>
-      <div>
-        <h3>Transactions</h3>
+    <div className="mb-6">
+      <div className="mb-4">
+        <h3 className="text-xl font-semibold text-green-600 mb-2">
+          Transactions Filter
+        </h3>
         <input
           type="text"
+          className="border p-2 rounded w-full"
           value={searchTerm}
           onChange={(e) => handleSearch(e.target.value)}
         />
