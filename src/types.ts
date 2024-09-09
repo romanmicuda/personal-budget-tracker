@@ -16,6 +16,11 @@ export interface TransactionProps {
 
 export interface DisplayTransactionProps {
   transactions: TransactionType[];
+  deleteTransaction: (transaction: TransactionType) => void;
+}
+
+export interface BalanceProps {
+  transactions: TransactionType[];
 }
 
 export interface ChartProps {

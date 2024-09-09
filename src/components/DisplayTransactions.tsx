@@ -10,6 +10,7 @@ import SearchResult from "./SearchResult";
 
 export const DisplayTransactions: React.FC<DisplayTransactionProps> = ({
   transactions,
+  deleteTransaction,
 }) => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [searchResult, setSearchResult] =
@@ -60,7 +61,10 @@ export const DisplayTransactions: React.FC<DisplayTransactionProps> = ({
         {isPending ? (
           "Loading..."
         ) : (
-          <SearchResult transactions={searchResult} />
+          <SearchResult
+            transactions={searchResult}
+            deleteTransaction={deleteTransaction}
+          />
         )}
       </div>
     </div>

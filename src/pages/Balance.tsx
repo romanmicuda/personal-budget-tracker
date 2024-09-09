@@ -1,9 +1,7 @@
 import React, { useDebugValue, useEffect, useState } from "react";
-import { DisplayTransactionProps } from "../types";
+import { BalanceProps, DisplayTransactionProps } from "../types";
 
-export const Balance: React.FC<DisplayTransactionProps> = ({
-  transactions,
-}) => {
+export const Balance: React.FC<BalanceProps> = ({ transactions }) => {
   const [monthIncome, setMonthIncome] = useState(0);
   const [monthExpenses, setMonthExpenses] = useState(0);
   const [yearIncome, setYearIncome] = useState(0);

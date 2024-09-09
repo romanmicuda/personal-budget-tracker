@@ -17,6 +17,12 @@ function PersonalBudgetTracker() {
     setTransactions((previous) => [...previous, transaction]);
   };
 
+  const deleteTransaction = (transaction: TransactionType) => {
+    setTransactions((previous) => [
+      ...previous.filter((trans) => trans.date != transaction.date),
+    ]);
+  };
+
   return (
     <div>
       <Balance transactions={transactions} />
@@ -27,7 +33,10 @@ function PersonalBudgetTracker() {
       />
       <Category categories={categories} addCategory={addCategory} />
       <Chart transactions={transactions} />
-      <DisplayTransactions transactions={transactions} />
+      <DisplayTransactions
+        transactions={transactions}
+        deleteTransaction={deleteTransaction}
+      />
     </div>
   );
 }
